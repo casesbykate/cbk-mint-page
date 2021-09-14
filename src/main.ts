@@ -62,5 +62,9 @@ import Wallet from "./klaytn/Wallet";
     if (await Wallet.connected() !== true) {
         await Wallet.connect();
     }
+    const address = await Wallet.loadAddress();
+    if (address !== undefined) {
+        addressInput.domElement.value = address;
+    }
     balance.appendText(utils.formatEther(await ExtWallet.loadBalance()));
 })();
