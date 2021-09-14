@@ -33,13 +33,15 @@ import Wallet from "./klaytn/Wallet";
                 click: async () => {
                     const balance = (await NFTContract.balanceOf(MintContract.address)).toNumber();
                     const count = parseInt(countInput.domElement.value, 10);
-                    if (balance >= count) {
+                    if (count > 10) {
+                        alert("한번에 최대 10개의 NFT만 민팅할 수 있습니다.");
+                    } else if (balance >= count) {
                         await MintContract.mint(
                             addressInput.domElement.value,
                             count,
                         );
                     } else {
-                        alert(`최대 ${balance}개 민팅할 수 있습니다.`);
+                        alert(`남은 물량인 ${balance}개만 민팅할 수 있습니다.`);
                     }
                 },
             }),
