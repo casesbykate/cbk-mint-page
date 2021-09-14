@@ -12,5 +12,80 @@
 }
 
 body {
-    font-family: Downcome;
+    font-family     : Downcome;
+    background-color: #000;
+    color           : #fff;
+    font-size       : 20px;
+    padding-bottom  : 100px;
+}
+
+.price-info {
+    position : fixed;
+    left     : 20px;
+    top      : 20px;
+    font-size: 24px;
+}
+
+main {
+    width     : 600px;
+    margin    : auto;
+    text-align: center;
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    label {
+        margin-bottom: 20px;
+        display      : flex;
+        width        : 100%;
+
+        >span {
+            width    : 130px;
+            font-size: 24px;
+        }
+
+        >input {
+            background-color: #939393;
+            flex-grow       : 1;
+            font-size       : 22px;
+        }
+    }
+
+    .mint-button {
+        font-size       : 24px;
+        background-color: #450000;
+        width           : 200px;
+        padding         : 10px 0;
+        margin          : 20px auto;
+        display         : block;
+    }
+
+    .progress {
+        margin-top: 30px;
+        font-size : 24px;
+        text-align: left;
+
+        >.meter {
+            margin: 16px 0;
+        }
+
+        >span {
+            display   : block;
+            font-size : 16px;
+            text-align: right;
+        }
+    }
+}
+
+.opensea-button {
+    position: fixed;
+    left    : 20px;
+    bottom  : 5px;
+}
+
+.website-button {
+    position: fixed;
+    right   : 20px;
+    bottom  : 10px;
 }

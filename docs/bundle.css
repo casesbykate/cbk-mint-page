@@ -170,7 +170,6 @@ input {
   height: 20px;
   /* Can be anything */
   position: relative;
-  margin: 60px 0 20px 0;
   /* Just for demo spacing */
   background: #ADADAD;
   border-radius: 25px;
@@ -237,5 +236,68 @@ input {
 }
 body {
   font-family: Downcome;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+.price-info {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  font-size: 24px;
+}
+main {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+main p {
+  margin-bottom: 30px;
+}
+main label {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+}
+main label > span {
+  width: 130px;
+  font-size: 24px;
+}
+main label > input {
+  background-color: #939393;
+  flex-grow: 1;
+  font-size: 22px;
+}
+main .mint-button {
+  font-size: 24px;
+  background-color: #450000;
+  width: 200px;
+  padding: 10px 0;
+  margin: 20px auto;
+  display: block;
+}
+main .progress {
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: left;
+}
+main .progress > .meter {
+  margin: 16px 0;
+}
+main .progress > span {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+}
+.opensea-button {
+  position: fixed;
+  left: 20px;
+  bottom: 5px;
+}
+.website-button {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
 }
 
