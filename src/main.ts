@@ -23,7 +23,7 @@ import Wallet from "./klaytn/Wallet";
             el("p", "You can mint your own Cases below.\nGet your own case from <Cases By Kate> and feel free to trace the clues."),
             el("label",
                 el("span", "Address"),
-                addressInput = el("input", { placeholder: "0x1234..." }),
+                addressInput = el("input", { placeholder: "0x1234...", readonly: "readonly" }),
             ),
             el("label",
                 el("span", "Mint Limit"),
