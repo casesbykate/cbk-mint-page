@@ -40,6 +40,7 @@ import Wallet from "./klaytn/Wallet";
                             addressInput.domElement.value,
                             count,
                         );
+                        setTimeout(() => location.reload(), 1000);
                     } else {
                         alert(`남은 물량인 ${balance}개만 민팅할 수 있습니다.`);
                     }
