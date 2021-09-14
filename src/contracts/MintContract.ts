@@ -4,7 +4,7 @@ import Contract from "./Contract";
 class MintContract extends Contract {
 
     constructor() {
-        super("0x10e29c9320a2caCE027eb1f2648e33480d4A1aEf", require("./MintContractABI.json"));
+        super("0xdAf312BFEb1d03b87F213DA3FC3ceADC220cd92e", require("./MintContractABI.json"));
     }
 
     public async mint(to: string, count: number): Promise<void> {
